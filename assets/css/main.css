@@ -2272,9 +2272,4 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
+   
