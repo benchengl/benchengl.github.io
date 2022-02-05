@@ -1,4 +1,4 @@
 Adding buttons: 			
-`<ul class="actions">
+'<ul class="actions">
   <li><a href="#" class="button">More</a></li>
-</ul>`
+</ul>'
