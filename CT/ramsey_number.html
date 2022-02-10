@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Def:Homotopy Extension Property</title>
+		<title>Def:Ramsey Number</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -30,16 +30,14 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1 id="hep">Homotopy Extension Property</h1>
+										<h1 id="fundamental_group">Ramsey Number</h1>
 									</header>
 
-									<p>We say a \(X,A\) satisfies <b>homotopy extension property</b> if \((X\times \{0\})\cup (A\times I)\) is a retract of \(X\times I\). Note that it's equivalent to saying that the <a href="homotopy.html#mapping_cylinder">mapping cylinder</a> \(M_i\) is a retract of \(X\times I\) where \(i:A\rightarrow X\) is the inclusion.
+									<p>A <b>path</b> in \(X\) is a continuous map \(f:I\rightarrow X\) and a <b>homotopy of paths</b> is a continuous family \(F_t:I\times X\) that \(F_0,F_1\) are independent of \(t\). We will exlpain in this <a href="#">proof</a> why this homotopy of paths is an equivalence relation. Denote \([f]\)
+                                        as the <b>homotopy class</b> of \(f\). The <b>fundamental group</b> with basepoint \(x\) is defined as the set of all homotopy classes \([f]\) where \(f\) is a <b>loop</b> or a path with same endpoints at \(x\). 
 									</p>
                                     <p>
-                                        <i>Example:</i> Let \(X\) be a line segement and \(A\) be a point on the line, then \((X,A)\) satisfies the HEP.
-                                    </p>
-                                    <p>
-                                        <i>Remark:</i> If \((X,A)\) is a <a href="cw_complex.html#cw_complex">CW pair</a>, then \(M_i\) is a <a href="homotopy.html#deformation_retract">deformation retract</a> of \(X\times I\), which implies that \((X,A)\) satisfies HEP. Here is the <a href="T1.html">proof</a>.
+                                        <i>Example:</i> 
                                     </p>
 								</section>
 
