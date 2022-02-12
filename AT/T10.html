@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Def:Covering Space</title>
+		<title>AT Theorem 10</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -29,24 +29,13 @@
 
 							<!-- Content -->
 								<section>
-									<header class="main">
-										<h1 id="covering_space">Covering Space</h1>
-									</header>
 
-									<p>A <b>covering space</b> of \(X\) denoted as \(\tilde{X}\) is a space with a <b>covering map</b> \(p:\tilde{X}\rightarrow X\) such that for each \(x\in X\), there is an open neighborhood \(U\) of \(x\) in \(X\) that \(p^{-1}(U)\) is a union of disjoint open sets and each of them is mapped homeomorphically to \(U\) via \(p\). Such \(U\) is called <b>evenly covered</b>. Disjoint open sets homeomorphic to \(U\) is <b>sheets</b> of \(\tilde{X}\) over \(U\). 
+									<p style="font-size:150%;"><b>Suppose given a covering map \(p:\tilde{X}\rightarrow X\) and a map \(f:Y\rightarrow X\) with \(Y\) path-connected and locally path-connected. Then a lift \(\tilde{f}:Y\rightarrow \tilde{X}\) exists iff \(f_{\ast}(\pi_1(Y))\subset p_{\ast}(\pi_1(\tilde{X}))\). </b> 
+									</p><br>
+
                                     <p>
-                                        <i>Example:</i> \(p:\mathbb{R}\rightarrow S^1, p(x)=(\cos 2\pi x, \sin 2\pi x)\) is a covering map and any open arc on \(S^1\) is evenly covered.
+                                        <i>Proof:</i> 
                                     </p>
-									<p>
-										<i>Remark:</i> Number of sheets of a covering map \(p:\tilde{X}\rightarrow X\) with \(X,\tilde{X}\) path-connected equals the index of \(p_{\ast}(\pi_1(\tilde{X}))\) in \(\pi_1(X)\).
-									</p>
-									<hr class="major" />
-									<p>
-										Let \(p:\tilde{X}\rightarrow X\) be a covering map and \(f:Y\rightarrow X\) a continuous map, then a <b>lift</b> of \(f\) is \(\tilde{f}:Y\rightarrow \tilde{X}\) that \(f=p\circ \tilde{f}\). 
-									</p>
-									<p>
-										<i>Remark:</i> See <a href="T4.html">path lifting property</a> and <a href="T5.html">homotopy lifting property</a>. Also see <a href="T10.html">criterions</a> when a lift exists.
-									</p>
 								</section>
 
 						</div>
