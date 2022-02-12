@@ -30,18 +30,19 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1 id="fundamental_group">Covering Space</h1>
+										<h1 id="covering_space">Covering Space</h1>
 									</header>
 
-									<p>A <b>covering space</b> of \(X\) denoted as \(\tilde{X}\) is a continuous map \(f:I\rightarrow X\) and a <b>homotopy of paths</b> is a continuous family \(F_t:I\times X\) that \(F_0,F_1\) are independent of \(t\). We will exlpain in this <a href="#">proof</a> why this homotopy of paths is an equivalence relation. Denote \([f]\)
-                                        as the <b>homotopy class</b> of \(f\). The <b>fundamental group</b> with basepoint \(x\) denoted as \(\pi_1(X,x_0)\) is defined as the set of all homotopy classes \([f]\) where \(f\) is a <b>loop</b> or a path with same endpoints at \(x\). 
-									</p>
+									<p>A <b>covering space</b> of \(X\) denoted as \(\tilde{X}\) is a space with a <b>covering map</b> \(p:\tilde{X}\rightarrow X\) such that for each \(x\in X\), there is an open neighborhood \(U\) of \(x\) in \(X\) that \(p^{-1}(U)\) is a union of disjoint open sets and each of them is mapped homeomorphically to \(U\) via \(p\). Such \(U\) is called <b>evenly covered</b>.
                                     <p>
-                                        <i>Example:</i> \(\pi_1(S^1)=\mathbb{Z}\). See the proof <a href="T3.html">here</a>.
+                                        <i>Example:</i> \(p:\mathbb{R}\rightarrow S^1, p(x)=(\cos 2\pi x, \sin 2\pi x)\) is a covering map and any open arc on \(S^1\) is evenly covered.
                                     </p>
 									<hr class="major" />
 									<p>
-										A space is <b>simply connected</b> iff there is a unique homotopy class of paths between any two points.
+										Let \(p:\tilde{X}\rightarrow X\) be a covering map and \(f:Y\rightarrow X\) a continuous map, then a <b>lift</b> of \(f\) is \(\tilde{f}:Y\rightarrow \tilde{X}\) that \(f=p\circ \tilde{f}\). 
+									</p>
+									<p>
+										<i>Remark:</i> See <a href="T4.html">path lifting property</a> and <a href="T5.html">homotopy lifting property</a>.
 									</p>
 								</section>
 
