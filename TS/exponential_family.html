@@ -30,13 +30,15 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1 id="statistic">Variance and Covariance</h1>
+										<h1 id="statistic">Exponential Family</h1>
 									</header>
 
 									<p>A family of distributions \(\{\mathcal{P}_{\theta}\}\) is called <b>exponential family</b> if the density function is \[p(x|\theta)=\textrm{exp}(\eta^T T(x)-A(\eta))h(x)\] where \(\eta=\eta(\theta)\in \mathbb{R}^m\) is the <a>natural parameter</a> and \(T(x)\in \mathbb{R}^m\) is the <a href="#"><b>sufficient statistics</b></a> and \(h(x)\) is the <b>base measure</b>. 
 									</p>
 
-                                    <p><i>Example:</i> </p>
+                                    <p><i>Example:</i> The Gaussian distribution \(N(\mu,\sigma^2)\) has density \[p(x|\mu,\sigma)=\frac{1}{\sqrt{2\pi}\sigma}\textrm{exp}(-\frac{(x-\mu)^2}{2\sigma^2})\]</p>  
+                                    where \(\theta=(\mu,\sigma)\), \(T=(x,x^2)^T, \eta(\theta)=(\frac{\mu}{\sigma^2},-\frac{1}{2\sigma^2})\). If \(X_1,\cdots, X_n\) is a random variable sample from \(N(\mu,\sigma^2)\), then the joint density is \[p(x_1,\cdots, x_n|\mu,\sigma)=\frac{1}{(2\pi)^{\frac{n}{2}}}\textrm{exp}(\frac{\mu}{\sigma^2}\sum_{i=1}^nx_i-\frac{1}{2\sigma^2}\sum_{i=1}^nx_i^2-n(\frac{\mu^2}{2\sigma^2}+\log\sigma))\]
+                                    where \(T=(\sum_{i}x_i,\sum_ix_i^2), \eta=(\frac{\mu}{\theta^2},-\frac{1}{2\sigma^2})\).
                                     
 
 								</section>
