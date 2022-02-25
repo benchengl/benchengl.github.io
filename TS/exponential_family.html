@@ -6,12 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Theory of Statistics</title>
+		<title>Def:Exponential Family</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/logo.png">
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="icon" href="../images/logo.png">
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<body class="is-preload">
@@ -25,33 +24,20 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>MATHWIKI</strong> by Bencheng Li</a>
+									<a href="../index.html" class="logo"><strong>MATHWIKI</strong> by Bencheng Li</a>
 								</header>
 
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Theory of Statistics</h1>
+										<h1 id="statistic">Variance and Covariance</h1>
 									</header>
 
-									<hr class="major" />
+									<p>A family of distributions \(\{\mathcal{P}_{\theta}\}\) is called <b>exponential family</b> if the density function is \[p(x|\theta)=\textrm{exp}(\eta^T T(x)-A(\eta))h(x)\] where \(\eta=\eta(\theta)\in \mathbb{R}^m\) is the <a>natural parameter</a> and \(T(x)\in \mathbb{R}^m\) is the <a href="#"><b>sufficient statistics</b></a> and \(h(x)\) is the <b>base measure</b>. 
+									</p>
 
-									<h2>Definitions</h2>
-
-									<a href="TS/variance.html">Variance and Covaraince</a><br>
-									<a href="TS/statistic.html">Statistic</a><br>
-									<a href="TS/exponential_family.html">Exponential Family</a><br>
-
-
-									<hr class="major" />
-
-									<h2>Theorems</h2>
-
-									<a href="AT/T1.html">CW pair satisfies HEP</a><br>
-
-									<hr class="major" />
-
-									<h2>Problems</h2>
+                                    <p><i>Example:</i> </p>
+                                    
 
 								</section>
 
@@ -75,11 +61,11 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="index.html">Real Analysis</a></li>
-										<li><a href="AT.html">Algebraic Toplogy</a></li>
-										<li><a href="CT.html">Combinatorics</a></li>
-										<li><a href="TS.html">Theory of Statistics</a></li>
+										<li><a href="../index.html">Homepage</a></li>
+										<li><a href="../index.html">Real Analysis</a></li>
+										<li><a href="../AT.html">Algebraic Toplogy</a></li>
+										<li><a href="../CT.html">Combinatorics</a></li>
+										<li><a href="../TS.html">Theory of Statistics</a></li>
 									</ul>
 								</nav>
 							
@@ -105,11 +91,11 @@
 
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>
