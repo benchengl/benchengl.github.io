@@ -37,7 +37,8 @@
 									The <b>moment generating function (MGF)</b> is \[M_X(u)=E[\textrm{exp}(u^TX)], u\in \mathbb{R}^m\]</p>
                                     <p>And thus we can compute the moments using MGF as follows: \[\alpha_{r_1,\cdots, r_m}=\frac{\partial^{r_1+\cdots+r_m}M_X(u)}{\partial u_1^{r_1}\cdots\partial u_m^{r_m}}|_{u=0}\]
                                     Also define the <b>cumulant generating function (CGF)</b> as \[K_X(u)=\log M_X(u)\] and let the following \(\kappa_{r_1,\cdots, r_m}\) be the <b>cumulants</b>:
-                                    \[\kappa{r_1,\cdots, r_m}=\frac{\partial^{r_1+\cdots+r_m}K_X(u)}{\partial u_1^{r_1}\cdots\partial u_m^{r_m}}|_{u=0}\]
+                                    \[\kappa_{r_1,\cdots, r_m}=\frac{\partial^{r_1+\cdots+r_m}K_X(u)}{\partial u_1^{r_1}\cdots\partial u_m^{r_m}}|_{u=0}\]
+                                    Consider \(X\sim \mathcal{P}_{\theta}\) be any exponential family, then recall the <a href="#">sufficient statistics</a> \(T(X)\) is also a random variable. It has MGF, \[M_T(u)=\int \textrm{exp}((u+\eta)^TT(x)-A(\eta))h(x)d\mu(x)=\textrm{exp}(A(\mu+\eta)-A(\mu))\] Thus \[K_T(u)=A(\mu+\eta)-A(\eta), E[T]=(\frac{\partial A(\eta)}{\partial \eta_1},\cdots, \frac{\partial A(\eta)}{\partial \eta_m})\]
                                     </p>
 
                                     <p><i>Example:</i> </p>
