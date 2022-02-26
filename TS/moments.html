@@ -34,7 +34,9 @@
 									</header>
 
 									<p>For a random variable \(X\) taking values in \(\mathbb{R}^m\), its <b>\(r=(r_1,\cdots, r_m)\)th-moments</b> is defined as \[\alpha_{r_1,\cdots, r_m}=E[X_1^{r_1}\cdots X_m^{r_m}]\]
-									</p>
+									The <b>moment generating function (MGF)</b> is \[M_X(u)=E[\textrm{exp}(u^TX)], u\in \mathbb{R}^m\]
+                                    And thus we can compute the moments using MGF as follows: \[\alpha_{r_1,\cdots, r_m}=\frac{\partial^{r_1+\cdots+r_m}M_X(u)}{\partial u_1^{r_1}\cdots\partial u^m^{r_m}}|_{u=0}\]
+                                    </p>
 
                                     <p><i>Example:</i> </p>
 
