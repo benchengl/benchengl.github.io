@@ -38,6 +38,7 @@
 
                                     <p><i>Example:</i> \(h(X_1,\cdots, X_n)=X_1+\cdots+X_n\) is a statistic.</p>
 									<p>A statistic \(T(X)\) is <b>sufficient</b> if there eixsts nonnegative \(g_{\theta},h\) that \[f(x|\theta)=g_{\theta}(T(x))h(x)\] which is called the factorization criterion. A sufficient statistic is minimal if for any other sufficient statistic \(S\), \(T\) is a function of \(S\).</p>
+									<p><i>Remark:</i> Note that by this criterion, since the distribution of \((X_1,\cdots, X_n)\) for i.i.d. \(X_1,\cdots, X_n\sim \mathcal{P}_{\theta}\) in exponential family is \[\textrm{exp}(\eta^T(\sum_i T_i(x_i))-nA(\eta))\prod_i h(x_i)\] Thus \(\sum_i T(X_i)\) is sufficient.</p>
                                     <hr class="major"/>
                                     <p>An <b>estimand</b> is a function \(g(\theta)\) of parameter \(\theta\). An <b>estimator</b> is used to estimate the estimand, \(\tilde{g}(\theta)\). <b>Loss function</b> is a bivariate function \(L(g,\tilde{g})\) used to calculate the difference between estimator and estimand. And <b>risk</b> is defined as the expectation of the loss function. </p>
 
