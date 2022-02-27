@@ -36,6 +36,7 @@
 									<p>Consider \(X\sim \mathcal{P}_{\theta}\), let \(g(\theta)\) be an estimand and \(\hat{g}(X)\) be an estimator of \(g(\theta)\), the <b>bias</b> of \(\hat{g}\) is then \[E[\hat{g}(X)]-g(\theta)\] We say an estimator \(\hat{g}\) is unbiased if its bias is zero. 
                                     </p>
                                     <p><i>Remark:</i> Note that for the squared loss, the risk is \[R(\hat{g},g)=E(\hat{g}(X)-g(\theta))^2=\textrm{Var}(\hat{g}(X))+\textrm{Bias}(\hat{g}(X))^2\]</p>
+                                    <p>An unbiased estimator \(\hat{g}(X)\) is called uniformly minimum-variance unbiased estimator (MVUE) of \(g(\theta)\) if \[\textrm{Var}(\hat{X})\leq \textrm{Var}(\tilde{g}(X))\] for all unbiased estimator \(\tilde{g}(X)\).</p>
 
 								</section>
 
