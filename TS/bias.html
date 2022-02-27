@@ -6,12 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Theory of Statistics</title>
+		<title>Def:Bias</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/logo.png">
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="icon" href="../images/logo.png">
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<body class="is-preload">
@@ -25,34 +24,18 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>MATHWIKI</strong> by Bencheng Li</a>
+									<a href="../index.html" class="logo"><strong>MATHWIKI</strong> by Bencheng Li</a>
 								</header>
 
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Theory of Statistics</h1>
+										<h1 id="statistic">Bias</h1>
 									</header>
 
-									<hr class="major" />
-
-									<h2>Definitions</h2>
-
-									<a href="TS/variance.html">Variance and Covaraince</a><br>
-									<a href="TS/statistic.html">Statistic</a><br>
-									<a href="TS/exponential_family.html">Exponential Family</a><br>
-									<a href="TS/moments.html">Moments</a><br>
-									<a href="TS/bias.html">Bias</a><br>
-
-									<hr class="major" />
-
-									<h2>Theorems</h2>
-
-									<a href="TS/T1.html">Stein's Lemma</a><br>
-
-									<hr class="major" />
-
-									<h2>Problems</h2>
+									<p>Consider \(X\sim \mathcal{P}_{\theta}\), let \(g(\theta)\) be an estimand and \(\hat{g}(X)\) be an estimator of \(g(\theta)\), the <b>bias</b> of \(\hat{g}\) is then \[E[\hat{g}(X)]-g(\theta)\] We say an estimator \(\hat{g}\) is unbiased if its bias is zero. 
+                                    </p>
+                                    <p><i>Remark:</i> Note that for the squared loss, the risk is \[R(\hat{g},g)=E(\hat{g}(X)-g(\theta))^2=\textrm{Var}(\hat{g}(X))+\textrm{Bias}(\hat{g}(X))^2\]</p>
 
 								</section>
 
@@ -76,11 +59,11 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="index.html">Real Analysis</a></li>
-										<li><a href="AT.html">Algebraic Toplogy</a></li>
-										<li><a href="CT.html">Combinatorics</a></li>
-										<li><a href="TS.html">Theory of Statistics</a></li>
+										<li><a href="../index.html">Homepage</a></li>
+										<li><a href="../index.html">Real Analysis</a></li>
+										<li><a href="../AT.html">Algebraic Toplogy</a></li>
+										<li><a href="../CT.html">Combinatorics</a></li>
+										<li><a href="../TS.html">Theory of Statistics</a></li>
 									</ul>
 								</nav>
 							
@@ -106,11 +89,11 @@
 
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>
